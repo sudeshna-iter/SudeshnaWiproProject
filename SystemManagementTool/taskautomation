@@ -1,0 +1,12 @@
+$source = "C:\Users\Sudeshna\Documents"
+$backup = "D:\Backup"
+$date = Get-Date -Format "yyyy-MM-dd_HH-mm"
+$dest = "$backup\backup_$date"
+
+# Create backup folder
+New-Item -ItemType Directory -Path $dest
+
+# Copy files
+Copy-Item "$source\*" -Destination $dest -Recurse
+
+Write-Output "Backup completed successfully at $dest"
