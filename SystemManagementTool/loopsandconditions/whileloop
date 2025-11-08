@@ -1,0 +1,5 @@
+$i = 1
+while ($i -le 3) {
+    Write-Output "Hello PowerShell $i"
+    $i++
+}
