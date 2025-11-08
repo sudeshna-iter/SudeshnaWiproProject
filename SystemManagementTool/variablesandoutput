@@ -1,0 +1,11 @@
+# Assign a value
+$name = "Sudeshna"
+
+# Print the value
+Write-Output "Hello, $name!"
+
+# Arithmetic
+$a = 10
+$b = 5
+$sum = $a + $b
+Write-Output "Sum: $sum"
