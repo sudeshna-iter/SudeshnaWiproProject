@@ -1,0 +1,12 @@
+# Display system information
+Write-Output "===== SYSTEM INFO ====="
+Get-Date
+Get-ComputerInfo | Select-Object CsName, OsName, OsVersion, WindowsVersion, OsArchitecture
+
+# List running processes
+Write-Output "===== RUNNING PROCESSES ====="
+Get-Process | Select-Object -First 10 Name, Id, CPU
+
+# Display disk usage
+Write-Output "===== DISK SPACE ====="
+Get-PSDrive C | Select-Object Used, Free
