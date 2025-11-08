@@ -1,0 +1,8 @@
+function Add-Numbers {
+    param([int]$x, [int]$y)
+    $sum = $x + $y
+    return $sum
+}
+
+$result = Add-Numbers -x 4 -y 6
+Write-Output "Sum = $result"
